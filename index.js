@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(basicAuth({
-    users: { 'admin': 'flag{ItsHereForeverNow}' },
+    users: { 'admin': 'secret' },
     challenge: true,
     realm: 'My Application',
 }));
